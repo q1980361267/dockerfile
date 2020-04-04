@@ -4,4 +4,5 @@ MAINTAINER qiuhao "130363331348@163.com"
 ENV REFRESHED_AT 2020-4-4
 RUN apt-get update && apt-get install -y nginx
 ENTRYPOINT["/usr/sbin/nginx"]
-CMD["-g", "daemon off;"]s
+CMD["-g", "daemon off;"]
+EXPOSE 80
